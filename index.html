@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macroscopically Maté Home</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header><h1>Macroscopically Maté</h1></header>
+    <main>
+        <section class="page" id="home">
+            <h1>Welcome to Macroscopically Maté</h1>
+            <h2>Your place for all things Maté</h2>
+            <p>Welcome to your all things mate website! Navigate to our shop to purchase items, 
+                or our history section to learn about mate. Hope you enjoy your visit. 
+                If you have any questions, visit our contact us page. 
+            </p>
+            <h2>Video Resources</h2>
+            <details>
+                <summary>How to prepare a mate</summary>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/I5JOt0B6iS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </details>
+            <details>
+                <summary>Health Benefits of Yerba Mate</summary>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/n1xClLdePO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </details>
+        </section>
+        <section class="page" id="history">
+            <article>
+                <h1>What Is Maté?</h1>
+                <figure>
+                <img src="mate1.webp" alt="mate with bombilla">
+                <figcaption>A typical mate gourd with bombilla and yerba.</figcaption>
+                </figure>
+                    <p>Mate or maté[a] (/ˈmæteɪ/) also known as chimarrão or cimarrón,[b] is a traditional South American caffeine-rich infused drink. It is made by soaking dried leaves of the yerba mate (Ilex paraguariensis), in hot water and is served with a metal straw in a container typically made from a calabash gourd (the mate proper), but also in some areas made from a cattle horn (guampa).
+
+                    Mate was consumed by the Guaraní and Tupí peoples. It has been drunk in South America since before the arrival of Europeans. Its consumption was exclusive to the natives of Paraguay,[2] more specifically the departments of Amambay and Alto Paraná. Some ethnic groups that consumed it are the Avá, the Mbyá and the Kaiowa, and also, to a lesser extent, other ethnic groups that carried out trade with them, such as the ñandevá, the Taluhets (ancient pampas) and the Qom (Tobas).[citation needed] It is the national beverage of Argentina,[3] Paraguay and Uruguay and is also consumed in the Bolivian Chaco, Northern and Southern Chile, southern Brazil, Syria (the largest importer in the world) and Lebanon, where it was brought from Paraguay and Argentina by immigrants.[4][5]
+                    
+                    Yerba mate (Ilex paraguariensis), ka'a in the Guarani language, contains (among other compounds) the stimulant caffeine. The leaves are dried and chopped or ground to make the coarse powdery preparation called yerba[c] (meaning 'herb'), which is then soaked in hot water.
+                    
+                    The metal straw is known as a bombilla or bomba and is traditionally made of silver. Modern straws are typically made of nickel silver, stainless steel, or hollow-stemmed cane. The bombilla functions both as a straw and as a sieve. The submerged end is flared, with small holes or slots that allow the brewed liquid in, but block the chunky matter that makes up much of the mixture. A modern bombilla design uses a straight tube with holes or a spring sleeve to act as a sieve.[6]
+                    
+                    The container the mate is served in is also known as mate.[d] It is commonly made from calabash gourd but may also be made out of other materials.
+                    
+                    Today, mate tea is sold commercially in tea bags and as bottled iced tea.
+                    <cite>https://en.wikipedia.org/wiki/Mate_(drink)</cite>  
+                    </p>
+                </article>
+
+        </section>
+        <section class="page" id="shop">
+            <h2>Welcome to our Shops page! Browse our collection of merchandise below</h2>
+            <div class="categoryList">
+                <a class="itemShop" id="thermos" href="#" onclick="return openShop('thermosShop');">Thermos</a>
+                    <div class="insideShop" id="thermosShop"><h2>Welcome to the Thermos Shop!</h2>
+                        <div class="product">
+                            <img src="thermos1.jpg" alt="a Thermos">
+                            <h3>A great thermos for all your mate needs! $15.99</h3>
+                        </div>
+                        <div class="product">
+                            <img src="thermos2.webp" alt="another Thermos">
+                            <h3>Drink in style with this Stanley special! $19.99</h3>
+                        </div>
+                    </div>
+                <a class="itemShop" id="mate" href="#" onclick="return openShop('mateShop');">Mate</a>
+                    <div class="insideShop" id="mateShop"><h2>Welcome to the Mate Shop!</h2>
+                        <div class="product">
+                            <img src="gourd1.jpg" alt="a good gourd">
+                            <h3>The classic calabaza style gourd! $6.99</h3>
+                        </div>
+                        <div class="product">
+                            <img src="gourd2.jpg" alt="another good gourd">
+                            <h3>The trusty wooden Mate cup! $7.99</h3>
+                        </div>
+                    </div>
+                <a class="itemShop" id="yerba" href="#" onclick="return openShop('yerbaShop');">Yerba</a>
+                    <div class="insideShop" id="yerbaShop"><h2>Welcome to the Yerba Shop!</h2>
+                        <div class="product">
+                            <img src="playadito.jpg" alt="playadito">
+                            <h3>Our most classic yet delicious Yerba! $10.99</h3>
+                        </div>
+                        <div class="product">
+                            <img src="laMerced.jpg" alt="la Merced">
+                            <h3>Enjoy this luxorious La Merced! $12.99</h3>
+                        </div>
+                        <div class="product">
+                            <img src="rosamonte.jpg" alt="rosamonte">
+                            <h3>Enjoy the intense flavor of Rosamonte! $13.99</h3>
+                        </div>
+                    </div>
+                <a class="itemShop" id="bombilla" href="#" onclick="return openShop('bombillaShop');">Bombilla</a>
+                    <div class="insideShop" id="bombillaShop"><h2>Welcome to the Bombilla Shop!</h2>
+                        <div class="product">
+                            <img src="bombilla.jpg" alt="Bombilla">
+                            <h3>The most reliable of bombillas! $4.99</h3>
+                        </div>
+                        <div class="product">
+                            <img src="bombilla2.jpg" alt="cheaper bombilla">
+                            <h3>Quality performance and price! $2.99</h3>
+                        </div>
+                    </div>
+            </div>
+
+        </section>
+        <section class="page" id="contactMe">
+            <p>We hope you are enjoying our website! If for any reason you need to contact us we 
+                can be reached at: <br>Phone: <u>480-313-4682</u><br>Email: <a href= "mailto: 10778552@uvu.edu">10778552@uvu.edu</a>
+            </p>
+            <img src="matepic.jpg" alt="">
+            
+        </section>
+    </main>
+    <aside>
+        <nav>
+            
+                <a class="menu" id="homeButton" href="#" onclick="return changePage('home','homeButton');">Home</a>
+                <a class="menu" id="historyButton" href="#" onclick="return changePage('history','historyButton');">History</a>
+                <a class="menu" id="shopButton" href="#" onclick="return changePage('shop','shopButton');">Shop</a>
+                <a class="menu" id="contactMeButton" href="#" onclick="return changePage('contactMe','contactMeButton');">Contact Us</a>
+            
+        </nav>
+    </aside>
+    <footer>Thank you for visiting the site! &copy Jordan Naegle all rights reserved</footer>
+</html>

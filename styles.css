@@ -1,0 +1,189 @@
+html {
+    background-color: #9dc183;
+}
+body{
+    display: grid;
+    grid-template-columns: 200px auto auto;
+    grid-template-areas: 
+    'header header header'
+    'nav main main'
+    'nav main main'
+    'footer footer footer';
+    
+}
+
+header {
+    grid-area: header;
+    background-image: url('yerbaMate.webp');
+    text-align: center;
+    height: 150px;
+    margin-bottom: 10px;
+}
+header h1 {
+    font-size: 50px
+}
+
+main {
+    grid-area: main;    
+}
+main  p {
+    text-indent: 25px;
+    line-height: 2;
+    margin: 10%;
+}
+
+aside {
+    grid-area: nav;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.menu {
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    flex-grow: 1;
+    height: 50px;
+    background-color: #a9ba9d;
+    font-size: 30px;
+}
+
+a:hover {
+    background-color: #8f9779;
+    color: #ddead1;
+}
+
+footer {
+    grid-area: footer;
+    height: 30px;
+    font-size: 11px;
+    border-top: 2px dotted black;
+    text-align: center;    
+    padding: 10px;
+    margin: 20px;
+}
+
+section details {
+    display: block;
+    margin-left: 10%;
+    margin-right: auto;
+    border-radius: 5px;
+
+}
+
+section h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;    
+}
+
+section h2 {
+    text-align: center;
+}
+
+cite{
+    align-self: center;
+}
+
+.page {
+    display: none;
+}
+#home{
+    display: inline;
+    align-items: center;
+}
+
+figcaption{
+    text-align: center;
+}
+
+#history img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 5px;
+}
+.categoryList {
+    display: flex;
+    flex-direction: column;
+    
+}
+.shopCategory {
+    text-align: center;
+    flex-grow: 1;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.itemShop {
+    padding-left: 10px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 5px;
+    height: 30px;
+    background-color: #a9ba9d;
+
+}
+
+#home iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 5px;
+}
+
+#contactMe img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 5px;
+}
+
+#thermosShop, #mateShop, #yerbaShop, #bombillaShop {
+    display: none;
+}
+
+
+.product {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items:center;
+}
+
+.product img{
+    width:250px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    body{
+        grid-template-columns: auto auto;
+        grid-template-areas: 
+        'header header'
+        'nav nav'
+        'main main'
+        'footer footer';
+    }
+    nav {
+        flex-direction: row;
+    }
+    .menu{
+        font-size: 25px;
+    }
+
+}
