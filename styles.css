@@ -74,7 +74,6 @@ footer {
 
 section details {
     display: block;
-    margin-left: 10%;
     margin-right: auto;
     border-radius: 5px;
 
@@ -140,9 +139,7 @@ figcaption{
 
 #home iframe {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    width: 100%;
     border-radius: 5px;
 }
 
@@ -168,7 +165,6 @@ figcaption{
 .product img{
     width:250px;
 }
-
 
 @media only screen and (max-width: 768px) {
     body{
