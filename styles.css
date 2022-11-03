@@ -9,12 +9,11 @@ body{
     'nav main main'
     'nav main main'
     'footer footer footer';
-    
 }
 
 header {
     grid-area: header;
-    background-image: url('yerbaMate.webp');
+    background-image: url('/images/yerbaMate.webp');
     text-align: center;
     height: 150px;
     margin-bottom: 10px;
