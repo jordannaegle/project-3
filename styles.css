@@ -104,6 +104,12 @@ figcaption{
     text-align: center;
 }
 
+#home img {
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
 #history img {
     display: block;
     margin-left: auto;
