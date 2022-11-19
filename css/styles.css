@@ -39,7 +39,7 @@ body{
 
 header {
     grid-area: header;
-    background-image: url('/images/yerbaMate.webp');
+    background-image: url('/yerbaMate.webp');
     text-align: center;
     height: 150px;
     margin-bottom: 10px;

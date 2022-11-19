@@ -4,7 +4,7 @@
     All background colors were switched. 
     The page buttons were moved to the top under the header and set to equal sizes. 
     Button borders will darken on hover.
-    
+
 
 */
 
@@ -23,7 +23,7 @@ html {
 }
 
 header {
-    background-image: url('/images/blackandwhitemate.png');   
+    background-image: url('/blackandwhitemate.png');   
 }
 
 header h1 {
