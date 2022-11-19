@@ -1,0 +1,108 @@
+/*
+    For the changes I created a sort of dark theme. 
+    The header image was switched. 
+    All background colors were switched. 
+    The page buttons were moved to the top under the header and set to equal sizes. 
+    Button borders will darken on hover.
+    
+
+*/
+
+
+html {
+    color: #011705;
+    color: #e6ebe5;
+    color: #595541;
+    color: #65755e;
+    color: #a19065;
+
+
+    background-color:#595541;
+    color: #e6ebe5;
+    
+}
+
+header {
+    background-image: url('/images/blackandwhitemate.png');   
+}
+
+header h1 {
+    color:#e6ebe5;
+    font-size: 50pt;
+}
+
+.menu {
+    color:#e6ebe5;
+    background-color: #65755e;
+    border: 2px solid #e6ebe5;
+    width: 25%;
+}
+
+.menu:hover {
+    background-color: #a19065;
+    color:#011705;
+    border: 2px solid #011705;
+}
+
+#theme {
+    color: #e6ebe5;
+    padding: 8px 16px;
+    border: 2px solid #e6ebe5;
+    background-color: #65755e;
+}
+
+#theme:hover{
+    background-color: #a19065;
+    color: #011705;
+    cursor: pointer;
+    border: 2px solid #011705;
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+
+    'header header'
+    'nav nav'
+    'main main'
+    'main main'
+    'footer footer';
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.itemShop {
+    background-color: #65755e;
+    color:#e6ebe5;
+    border: 2px solid #e6ebe5;
+
+}
+
+.itemShop:hover {
+    background-color: #a19065;
+    border: 2px solid #011705;
+    color: #011705;
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        grid-template-columns: auto auto;
+        grid-template-areas: 
+        'header header'
+        'nav nav'
+        'main main'
+        'footer footer';
+    }
+    nav {
+        flex-direction: row;
+    }
+    .menu{
+        font-size: 20px;
+        height: 20px;
+    }
+}
