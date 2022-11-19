@@ -1,5 +1,7 @@
 /* 
-There weren't any changes suggested on my first submission. 
+I added an image on the homepage as it was a little bland. 
+I also made the buttons even size on mobile mode. 
+
 */
 
 html {
@@ -203,7 +205,7 @@ figcaption{
         grid-template-areas: 
         'header header'
         'nav nav'
-        'main main'
+        'main main' 
         'footer footer';
     }
     nav {
@@ -211,6 +213,7 @@ figcaption{
     }
     .menu{
         font-size: 22px;
+        width: 25%;
     }
 
 }
