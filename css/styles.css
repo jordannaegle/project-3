@@ -1,7 +1,10 @@
-/* 
-I added an image on the homepage as it was a little bland. 
-I also made the buttons even size on mobile mode. 
-
+/*
+I declare that the following source code was written by me, or provided
+by the instructor for this project. I understand that copying source
+code from any other source, providing source code to another student, 
+or leaving my code on a public web site constitutes cheating.
+I acknowledge that  If I am found in violation of this policy this may result
+in a zero grade, a permanent record on file and possibly immediate failure of the class.
 */
 
 html {
@@ -33,7 +36,7 @@ body{
     width: 100px;
 }
 
-#theme:hover {
+#theme:hover, button[type=submit]:hover {
     background-color: #8f9779;
     color: #ddead1;
     cursor: pointer;
@@ -132,6 +135,81 @@ cite{
 figcaption{
     text-align: center;
 }
+/*Starting here for form CSS*/
+#logUser {
+    display: flexbox;
+
+}
+
+#success {
+    display: none;
+}
+
+.formContainer{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#formId {
+    width: 50%
+}
+
+.flexForm {
+    list-style-type:none;
+}
+
+.flexForm > li {
+    margin: 10px;
+}
+
+label{
+    margin:10px;
+}
+
+input[type=text], input[type=checkbox], textarea, button[type=submit] {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   font-size: 15px;
+}
+
+button[type=submit]{
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #a9ba9d;
+}
+
+input[type=checkbox]{
+    width: auto;
+}
+
+/*only show error information when 'was-validated' class is added to the input*/
+input.was-validated:invalid {
+    border: 2px solid red;
+}
+
+input.was-validated:valid {
+    border:2px solid green;
+}
+  
+input.was-validated:invalid ~ div {
+    display: block;
+}
+  /* hide all error divs 
+  ~ is the general sibling selector and selects 'div' siblings of the input*/
+  
+
+.errorMsg {
+    color: red;
+    text-align: center;
+}
+
+/*New Form CSS ending here */
 
 #home img {
     display: block;
@@ -215,5 +293,11 @@ figcaption{
         font-size: 22px;
         width: 25%;
     }
+    #formId {
+        width: 75%
+    }
+    input[type=text], input[type=checkbox], textarea, button[type=submit] {
+        font-size: 12px;
+     }
 
 }

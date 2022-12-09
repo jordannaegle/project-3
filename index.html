@@ -4,8 +4,13 @@
 Project:  Project 5-'Web Site-Visitor Form Validation' 
 Name: Jordan Naegle
 Submitted: 12/8/2022
- 
 
+I declare that the following source code was written by me, or provided
+by the instructor for this project. I understand that copying source
+code from any other source, providing source code to another student, 
+or leaving my code on a public web site constitutes cheating.
+I acknowledge that  If I am found in violation of this policy this may result
+in a zero grade, a permanent record on file and possibly immediate failure of the class.
 
 
 -->
@@ -16,7 +21,7 @@ Submitted: 12/8/2022
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Macroscopically Maté Home</title>
     <link id="styleLink" href="/css/styles.css" rel="stylesheet">
-    <script src="script.js"></script>
+    
 </head>
 <body>
     <header>
@@ -24,8 +29,85 @@ Submitted: 12/8/2022
         <p id="theme">Change Theme</p>
     </header>
     <main>
-        
-        
+        <section class="page" id="logUser">
+        <div class="formContainer">
+            <h1>Visitor Form</h1>
+            <div id="success" class="successMsg" >
+                <h2>Thank you for logging your visit!</h2>
+                <img src="/images/mateDrawing.svg" alt="mate drawing">
+            </div>
+            <form id="formId" method="POST" action="https://wp.zybooks.com/form-viewer.php" novalidate="true" target="_blank">
+                <ul class="flexForm">
+                    <li class="section-display">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" placeholder="Enter your first name here" required>
+                        <div class="errorMsg"></div>
+                    </li>
+                    <li>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" placeholder="Enter your last name here">
+                        <div class="errorMsg"></div>
+                    </li>
+                    <li>
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" placeholder="Enter your address here">
+                        <div class="errorMsg"></div>
+                    </li>
+                    <li>
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" placeholder="Enter your city here">
+                        <div class="errorMsg"></div>
+                    </li>
+                    <li>
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" placeholder="Enter your state here">
+                        <div class="errorMsg"></div>
+                    </li>
+                    <li>
+                        <label for="zip">Zip</label>
+                        <input type="text" id="zip" name="zip" placeholder="Enter your zip here">
+                        <div class="errorMsg"></div>
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Enter your email here">
+                        <div class="errorMsg"></div>
+                    </li>
+                    <li>
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" name="phone" placeholder="Enter your phone here">
+                        <div class="errorMsg"></div>
+                    </li>
+                    
+                    <h2>How did you find my page?</h2>
+                    
+                    <li>
+                        <input type="checkbox" id="google" name="find-page" value="google">
+                        <label for="google">Google Search</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="friend" name="find-page" value="friend">
+                        <label for="friend">Friend</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="newspaper" name="find-page" value="newspaper">
+                        <label for="newspaper">News Paper</label>
+                        <div class="errorMsg"></div>
+                    </li>
+                    <li>
+                        <label for="comment">Comments</label>
+                        <textarea row="4" id="comments" placeholder="Enter your comments here."></textarea>
+                    </li>
+                    <li>
+                        <button id="submitBtn" type="submit">Send</button>
+                    </li>
+                </ul>
+            </form>
+
+        </div>
+        </section>
+        <script defer src="js/validation.js"></script>
+        <script defer src="js/main.js"></script>
         
         <section class="page" id="home">
             <h1>Welcome to Macroscopically Maté</h1>
@@ -137,6 +219,7 @@ Submitted: 12/8/2022
                 <a class="menu" id="historyButton" href="#" onclick="return changePage('history','historyButton');">History</a>
                 <a class="menu" id="shopButton" href="#" onclick="return changePage('shop','shopButton');">Shop</a>
                 <a class="menu" id="contactMeButton" href="#" onclick="return changePage('contactMe','contactMeButton');">Contact Us</a>
+                <a class="menu" id="logUserButton" href="#" onclick="return changePage('logUser', 'logUserButton');">Log Visit</a>
             
         </nav>
     </aside>
