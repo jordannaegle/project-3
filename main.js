@@ -22,15 +22,15 @@ function changeTheme(){
         
         let link = document.getElementById("newTheme");
         link.remove();
-        document.getElementById('mateDrinker').src = "/images/messimate.jpg";
+        document.getElementById('mateDrinker').src = "messimate.jpg";
     }
     else{
         let link = document.createElement('link');
-        link.setAttribute("href", "/css/theme.css");
+        link.setAttribute("href", "theme.css");
         link.setAttribute("rel", "stylesheet");
         link.setAttribute("id", "newTheme");
         document.getElementsByTagName('head')[0].appendChild(link);
-        document.getElementById('mateDrinker').src = "/images/obama.jpg";
+        document.getElementById('mateDrinker').src = "obama.jpg";
     }
     changedTheme = !changedTheme;
     changePage('home', 'homeButton')
