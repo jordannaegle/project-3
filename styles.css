@@ -299,5 +299,7 @@ input.was-validated:invalid ~ div {
     input[type=text], input[type=checkbox], textarea, button[type=submit] {
         font-size: 12px;
      }
+   
+    
 
 }
