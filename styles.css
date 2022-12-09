@@ -304,6 +304,8 @@ input.was-validated:invalid ~ div {
       display: block;
       width: 50%;
       height: auto;
+      margin: auto;
+
     }
 
 }
